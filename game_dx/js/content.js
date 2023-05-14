@@ -86,7 +86,7 @@ const unlock = [
 const background = [
     './assets/d1/bg.gif',
     './assets/d2/bg.gif',
-    './assets/d3/bg.png',
+    './assets/d3/bg.gif',
     './assets/d4/bg.gif',
     './assets/d5/bg.gif',
     './assets/d6/bg.gif',

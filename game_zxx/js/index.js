@@ -121,7 +121,8 @@ $('.game .submit').on("click", function () {
 })
 
 // 答题情况回显
-function changeStyle() {
+function changeStyle(timerSecond) {
+    clearTimeout(timerSecond)
     $(`.game`).hide();
     unlock_res.forEach(item => {
         $(`#game${item}`).css("pointer-events", "none");
@@ -158,6 +159,7 @@ function cancel() {
         $(`.learn-score span`).text('学习币 × ' + ++learnScore);
     }, 2000)
     let timerSecond = setTimeout(() => {
+        clearTimeout(timerFirst)
         $(`.tips-content .suggest #details`).remove();
         $(`.learn-score-animation`).hide()
         // 判断条件为题目总数量
@@ -168,7 +170,7 @@ function cancel() {
         // }
         unlock_res.push(topicIndex)
         $(`.page2`).fadeIn(1000);
-        changeStyle()
+        changeStyle(timerSecond)
     }, 2500)
 
 }

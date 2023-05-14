@@ -211,11 +211,13 @@ body {
     background: #1f8ada;
 }
 
-.message_board iframe, .form_board iframe {
+.message_board iframe,
+.form_board iframe {
     height: calc(100% - 0.3rem);
 }
 
-.message_board .return, .form_board .return {
+.message_board .return,
+.form_board .return {
     color: #4b3a3a;
     height: 0.3rem;
     line-height: 0.3rem;
@@ -418,6 +420,7 @@ body {
     background-image: url("../assets/public/class_meeting.png");
     background-repeat: no-repeat;
     background-size: contain;
+    opacity: 0.6;
 }
 
 .submit {
