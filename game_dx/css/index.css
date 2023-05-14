@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    max-width: 4.5rem;
+    min-width: 3rem;
+    margin: 0 auto;
+    overflow: auto;
+    font-size: 0.155rem;
+    /* overflow: hidden; */
+}
+
+.mugine_audio {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 999;
+}
+
+/* 首页 */
+.page0 {
+    background-image: url("../assets/public/bg_0.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    top: 28%;
+    left: 38%;
+    width: 0.9rem;
+    height: 0.03rem;
+    border-radius: 0.02rem;
+    background: linear-gradient(#2196f3 0 0) 0/0% no-repeat lightblue;
+    animation: p2 1.5s forwards steps(10);
+}
+
+@keyframes p2 {
+    100% {
+        background-size: 110%
+    }
+}
+
+.page1 {
+    background-image: url("../assets/public/bg_1.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.enterup .enter {
+    /* opacity: 0; */
+    /* background-color: pink; */
+    background-image: url("../assets/public/enter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    bottom: 15%;
+    left: 31%;
+    height: 0.5rem;
+    width: 1.42rem;
+}
+
+/* 答题页 */
+.page2 {
+    background-color: #a3d7f3;
+    background-image: url("../assets/public/bg_2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page2 .child {
+    width: 1.3rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+#game0 {
+    position: absolute;
+    left: 11%;
+    top: 18%;
+    background-image: url(../assets/d1/index_bg.png);
+    background-size: 78% 100%;
+}
+
+#game1 {
+    position: absolute;
+    right: 11%;
+    top: 18%;
+    background-image: url(../assets/d2/index_bg.png);
+    background-size: 70% 100%;
+}
+
+#game2 {
+    position: absolute;
+    left: 11%;
+    top: 33%;
+    background-image: url("../assets/d3/index_bg.png");
+    background-size: 71% 100%;
+}
+
+#game3 {
+    position: absolute;
+    right: 11%;
+    top: 33%;
+    background-image: url("../assets/d4/index_bg.png");
+    background-size: 71% 100%;
+}
+
+#game4 {
+    position: absolute;
+    left: 11%;
+    top: 49%;
+    background-image: url("../assets/d5/index_bg.png");
+    background-size: 80% 100%;
+}
+
+#game5 {
+    position: absolute;
+    right: 11%;
+    top: 49%;
+    background-image: url("../assets/d6/index_bg.png");
+    background-size: 72% 100%;
+}
+
+#game6 {
+    position: absolute;
+    left: 11%;
+    top: 64%;
+    background-image: url("../assets/d7/index_bg.png");
+    background-size: 72% 100%;
+}
+
+#game7 {
+    position: absolute;
+    right: 11%;
+    top: 64%;
+    background-image: url("../assets/d8/index_bg.png");
+    background-size: 72% 100%;
+}
+
+#game8 {
+    position: absolute;
+    left: 11%;
+    top: 80%;
+    background-image: url("../assets/d9/index_bg.png");
+    background-size: 88% 100%;
+}
+
+#game9 {
+    position: absolute;
+    right: 11%;
+    top: 80%;
+    background-image: url("../assets/d10/index_bg.png");
+    background-size: 70% 100%;
+}
+
+.message {
+    position: absolute;
+    right: 9%;
+    top: 7%;
+    width: 0.5rem;
+    height: 0.55rem;
+    /* background-color: pink; */
+}
+
+/* iframe {
+    pointer-events: none;
+} */
+
+.message_board {
+    width: 100%;
+    height: 100%;
+    background: #f9feda;
+    /* position: relative; */
+}
+
+.form_board {
+    width: 100%;
+    height: 100%;
+    background: #1f8ada;
+}
+
+.message_board iframe, .form_board iframe {
+    height: calc(100% - 0.3rem);
+}
+
+.message_board .return, .form_board .return {
+    color: #4b3a3a;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.1rem;
+    font-weight: 500;
+}
+
+/* 加了样式之后 脱离文档流 提交没有效果 */
+/* .message_board .return {
+    position: absolute;
+    width: 1.1rem;
+    height: 0.34rem;
+    background-color: pink;
+    right: 17%;
+    top: 5.72rem;
+} */
+
+.game_lock {
+    position: absolute;
+    background-image: url("../assets/public/unlock_bg.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-position: center;
+    left: 33%;
+    top: 21%;
+    width: 0.43rem;
+    height: 0.41rem;
+    /* background-color: green; */
+}
+
+/* 答题要求 */
+.bg img {
+    width: 100%;
+}
+
+.bg {
+    position: relative;
+}
+
+/* 具体答题 */
+.game {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.answer {
+    position: relative;
+    height: 5.5rem;
+
+}
+
+.answer .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.answer .item .topic {
+    margin-bottom: 0.2rem;
+    background-position: center;
+    background-image: url("../assets/public/topic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 95% 100%;
+    /* margin: 0 0.3rem; */
+}
+
+.topic .header {
+    width: 3.17rem;
+    height: 0.45rem;
+    margin-left: 0.28rem;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 0.19rem;
+    color: #4b3a3a;
+
+}
+
+.topic .footer {
+    width: 85%;
+    font-size: 0.15rem;
+    color: #4b3a3a;
+    margin: 0 auto;
+    margin-bottom: 0.2rem;
+}
+
+
+.answer .item .options .options-item {
+    display: inline-block;
+    height: 0.56rem;
+    max-width: 2.98rem;
+    margin-bottom: 0.1rem;
+    background-color: #fff;
+    /* background-image: url("../assets/public/options.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 88% 100%; */
+    border: 0.02rem solid #4b3a3a;
+    border-radius: 0.14rem;
+    position: relative;
+    line-height: 0.4rem;
+    color: #4b3a3a;
+    margin-left: 0.3rem;
+    white-space: nowrap;
+}
+
+.options-item div {
+    font-size: 0.16rem;
+    word-wrap: break-word;
+    /* padding-left: 0.17rem;
+    padding-right: 0.17rem; */
+    padding: 0.06rem 0.17rem;
+}
+
+/* 遮罩层 */
+.mask {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 水平垂直居中 */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mask .continue {
+    position: relative;
+    /* top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* background-color: pink; */
+    width: 82%;
+    height: 5.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 0.8rem;
+}
+
+.mask .tips-content {
+    /* background-color: pink; */
+    position: absolute;
+    height: 2.78rem;
+    width: 84%;
+    top: 20%;
+    left: 8%;
+    overflow-y: scroll;
+}
+
+.mask .tips-content::-webkit-scrollbar {
+    display: none;
+}
+
+.mask .tips-content .suggest {
+    color: #4b3a3a;
+    /* overflow-y: scroll; */
+}
+
+.mask .cancel {
+    position: absolute;
+    bottom: 13%;
+    left: 27%;
+    /* background-color: pink; */
+    height: 0.34rem;
+    width: 1.52rem;
+    background-image: url("../assets/public/get.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* .mask .check {
+    position: absolute;
+    bottom: 14%;
+    left: 69%;
+    height: 0.34rem;
+    width: 0.74rem;
+    background-image: url("../assets/public/check.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+.mask .class-meeting {
+    position: absolute;
+    top: 13%;
+    left: 71%;
+    height: 0.34rem;
+    width: 0.74rem;
+    background-image: url("../assets/public/class_meeting.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.submit {
+    width: 1.2rem;
+    height: 0.5rem;
+    margin-left: 10%;
+    /* position: absolute;
+    left: 10%;
+    bottom: -1.5%; */
+    background-image: url("../assets/public/submit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.learn-score {
+    width: 1.3rem;
+    height: 0.5rem;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-image: url("../assets/public/learnscore.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.learn-score span {
+    line-height: 0.6rem;
+    font-size: 0.18rem;
+    font-weight: bolder;
+    color: #fff;
+    padding-left: 0.32rem;
+}
+
+/* .score-page {
+    width: 100%;
+    height: 100%;
+} */
+
+/* 学习币得分动画 */
+.learn-score-animation {
+    /* width: 4rem; */
+    position: relative;
+    /* background-color: pink; */
+    height: 100%;
+    /* top: 30%;
+    left: 30%; */
+    /* width: 100%; */
+    /* height: 5.9rem; */
+    /* margin-top: 3rem; */
+    /* height: 100%; */
+    /* transform: translate(-50%, -50%); */
+    /* animation: learnscore-third 1.2s forwards; */
+}
+
+.get-score {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 10%;
+    top: 10%;
+    animation: learnscore-third 1.2s forwards;
+}
+
+@keyframes learnscore-first {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes learnscore-second {
+    0% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5) translate(2.1rem, 7.2rem);
+    }
+}
+
+@keyframes learnscore-third {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.learn-score-animation .halo {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    width: 2.7rem;
+    height: 2.7rem;
+    z-index: 1;
+    animation: learnscore-first 1.5s forwards;
+}
+
+.learn-score-animation .learn {
+    position: absolute;
+    top: 31%;
+    left: 33%;
+    width: 1.6rem;
+    height: 1.6rem;
+    z-index: 2;
+    animation: learnscore-second 1s 1.5s forwards;
+}
+
+img {
+    width: 100%;
+}

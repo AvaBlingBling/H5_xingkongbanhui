@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/common.js"></script>
+
+    <title>让我们共同成长——大学</title>
+</head>
+
+<body>
+    <!-- 首页 -->
+    <div class="page0 bg">
+        <div class="progress">
+        </div>
+    </div>
+    <div class="page1 bg" style="display:none">
+        <div class="enterup">
+            <div class="enter"></div>
+        </div>
+    </div>
+
+    <!-- 答题页 -->
+    <div class="page2 bg" style="display:none">
+        <svg class="mugine_audio" version="1.0" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 46 46"
+            enable-background="new 0 0 46 46" xml:space="preserve">
+            <g>
+                <circle opacity="0.6" cx="23" cy="23" r="23"></circle>
+                <g>
+                    <path fill="#ECECEC"
+                        d="M23,2c11.6,0,21,9.4,21,21s-9.4,21-21,21S2,34.6,2,23S11.4,2,23,2 M23,0C10.3,0,0,10.3,0,23s10.3,23,23,23 s23-10.3,23-23S35.7,0,23,0L23,0z">
+                    </path>
+                </g>
+                <path fill="#ECECEC"
+                    d="M27.5,7.3c0.6,1.1,0.8,2.4,1.6,3.4c0.9,1.5,2.1,2.8,3,4.3c0.6,1.1,1.3,2.2,1.4,3.4c0.4,1.6-0.1,3.4-0.9,4.8 c-0.8,0.7-1.1-0.4-0.9-1c0.1-0.9,0.2-1.8,0-2.7c-0.2-1.3-0.6-2.6-1.4-3.7c-0.7-0.8-1.5-2.5-2.8-2.1c-0.9,0.4-0.7,1.5-0.8,2.3 c-0.6,5-1.2,10.1-1.9,15.1c-0.3,2.1-2.3,3.3-4.1,4c-1.6,0.7-3.5,1-5.2,0.4c-1.6-0.4-3.2-1.8-3-3.5c0.1-2.1,1.8-3.8,3.8-4.4 c1.9-0.8,4.2-0.8,6.1,0.2c0.9,0.4,1.3-0.4,1.5-1.3c0.9-6.4,1.7-12.8,2.5-19.2C26.3,6.8,27.4,6.7,27.5,7.3L27.5,7.3z">
+                </path>
+            </g>
+            <polygon class="mugine_audio_off" fill="#ECECEC" points="14,11.2 13.2,12.9 33.3,34.2 34.2,32.5 "
+                style="display: none;">
+            </polygon>
+        </svg>
+        <div class="message"></div>
+        <div id="game0" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game1" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game2" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game3" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game4" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game5" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game6" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game7" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game8" class="child">
+            <div class="game_lock"></div>
+        </div>
+        <div id="game9" class="child">
+            <div class="game_lock"></div>
+        </div>
+    </div>
+    <!-- 留言板 -->
+    <div class="message_board" style="display:none">
+        <div class="return">返回</div>
+
+        <iframe src="https://rmt.imugeda.com/c/scpy/4xe9/index.html" width="100%" frameborder="0"></iframe>
+    </div>
+    <!-- 具体题目 -->
+    <div class="game" style="display:none">
+        <svg class="mugine_audio" version="1.0" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 46 46"
+            enable-background="new 0 0 46 46" xml:space="preserve">
+            <g>
+                <circle opacity="0.6" cx="23" cy="23" r="23"></circle>
+                <g>
+                    <path fill="#ECECEC"
+                        d="M23,2c11.6,0,21,9.4,21,21s-9.4,21-21,21S2,34.6,2,23S11.4,2,23,2 M23,0C10.3,0,0,10.3,0,23s10.3,23,23,23 s23-10.3,23-23S35.7,0,23,0L23,0z">
+                    </path>
+                </g>
+                <path fill="#ECECEC"
+                    d="M27.5,7.3c0.6,1.1,0.8,2.4,1.6,3.4c0.9,1.5,2.1,2.8,3,4.3c0.6,1.1,1.3,2.2,1.4,3.4c0.4,1.6-0.1,3.4-0.9,4.8 c-0.8,0.7-1.1-0.4-0.9-1c0.1-0.9,0.2-1.8,0-2.7c-0.2-1.3-0.6-2.6-1.4-3.7c-0.7-0.8-1.5-2.5-2.8-2.1c-0.9,0.4-0.7,1.5-0.8,2.3 c-0.6,5-1.2,10.1-1.9,15.1c-0.3,2.1-2.3,3.3-4.1,4c-1.6,0.7-3.5,1-5.2,0.4c-1.6-0.4-3.2-1.8-3-3.5c0.1-2.1,1.8-3.8,3.8-4.4 c1.9-0.8,4.2-0.8,6.1,0.2c0.9,0.4,1.3-0.4,1.5-1.3c0.9-6.4,1.7-12.8,2.5-19.2C26.3,6.8,27.4,6.7,27.5,7.3L27.5,7.3z">
+                </path>
+            </g>
+            <polygon class="mugine_audio_off" fill="#ECECEC" points="14,11.2 13.2,12.9 33.3,34.2 34.2,32.5 "
+                style="display:none">
+            </polygon>
+        </svg>
+        <div class="answer" style="display:none">
+            <div class="item">
+                <div class="topic">
+                    <div class="header">
+                    </div>
+                    <div class="footer">
+                    </div>
+                </div>
+                <div class="options"></div>
+                <div class="submit" style="display: none"></div>
+            </div>
+
+        </div>
+        <div class="mask" style="display: none;">
+            <div class="continue">
+                <div class="tips-content">
+                    <div class="suggest"></div>
+                </div>
+                <div class="class-meeting"></div>
+                <!-- <div class="check"></div> -->
+                <div class="cancel"></div>
+
+            </div>
+        </div>
+        <div class="learn-score-animation" style="display:none">
+            <div class="get-score">
+                <div class="halo">
+                    <img src="./assets/public/halo.png" alt="">
+                </div>
+                <div class="learn">
+                    <img src="./assets/public/learn.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class=" learn-score">
+            <span>学习币 × 0</span>
+        </div>
+    </div>
+    <!-- 表单 -->
+    <div class="form_board" style="display:none">
+        <iframe src="https://rmt.imugeda.com/c/scpy/g0s8/index.html" width="100%" frameborder="0"></iframe>
+    </div>
+    <!-- 学习币得分页 -->
+    <!-- <div class="score-page" style="display:none"></div> -->
+    <audio id="bg_audio" controls loop style="display: none; position: absolute; top: -1000px">
+        <source src="./assets/public/我们的小时光.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="score_audio" controls style="display: none; position: absolute; top: -1000px">
+        <source src="./assets/public/score_music.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="click_audio" controls style="display: none; position: absolute; top: -1000px">
+        <source src="./assets/public/click_music.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
