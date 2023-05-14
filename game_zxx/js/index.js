@@ -52,8 +52,6 @@ $(".message_board .return").on("click", function () {
 
 function gameShow() {
     $(`.page2`).hide();
-    $(`.game`).fadeIn();
-    $(`.game .answer`).fadeIn()
     $(`.answer .item .options`).empty();
     // 先进行背景图片预加载，防止出现背景切换造成的闪屏问题)
     const img = new Image();
@@ -78,6 +76,8 @@ function gameShow() {
             });
         }
     })
+    $(`.game`).fadeIn();
+    $(`.game .answer`).fadeIn()
     $(`.game .submit`).fadeIn()
     // 回答情况
     answer()
@@ -144,14 +144,17 @@ $(".game .mask .cancel").on("click", debounce(cancel));
 function cancel() {
     $(`.answer .item .options`).empty();
     $(`.game .mask`).hide();
+    $(`.game`).css({
+        "background-image": `url(${score[topicIndex]})`,
+    });
+    // const img = new Image();
+    // img.src = score[topicIndex]
+    // img.onload = () => {
+    //     $(`.game`).css({
+    //         "background-image": `url(${score[topicIndex]})`,
+    //     });
+    // }
     $(`.learn-score-animation`).fadeIn()
-    const img = new Image();
-    img.src = score[topicIndex]
-    img.onload = () => {
-        $(`.game`).css({
-            "background-image": `url(${score[topicIndex]})`,
-        });
-    }
     // 学习币背景音乐播放
     audioScorePlay()
     // 动画效果结束后再执行
